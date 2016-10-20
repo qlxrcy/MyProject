@@ -4,13 +4,23 @@
       xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
 <head>
     <meta charset="UTF-8" />
-    <title>Index</title>
+    <title>Insert title here</title>
 </head>
 <body>
-<h3>index!</h3>
+<h3>index</h3>
 <!-- 验证当前用户是否为“访客”，即未认证（包含未记住）的用户。 -->
 <p shiro:guest="">Please <a href="login.html">login</a></p>
 
+
+<!-- 认证通过或已记住的用户。 -->
+<p shiro:user="">
+    Welcome back John! Not John? Click <a href="login.html">here</a> to login.
+</p>
+
+<!-- 已认证通过的用户。不包含已记住的用户，这是与user标签的区别所在。 -->
+<p shiro:authenticated="">
+    Hello, <span shiro:principal=""></span>, how are you today?
+</p>
 <a shiro:authenticated="" href="updateAccount.html">Update your contact information</a>
 
 <!-- 输出当前用户信息，通常为登录帐号信息。 -->
@@ -46,6 +56,16 @@
 <!-- 与hasPermission标签逻辑相反，当前用户没有制定权限时，验证通过。 -->
 <p shiro:lacksPermission="userInfo:del"><!-- 没有权限 -->
     Sorry, you are not allowed to delete user accounts.
+</p>
+
+<!-- 验证当前用户是否拥有以下所有角色。 -->
+<p shiro:hasAllPermissions="userInfo:view, userInfo:add"><!-- 权限与判断 -->
+    You can see or add users.
+</p>
+
+<!-- 验证当前用户是否拥有以下任意一个权限。  -->
+<p shiro:hasAnyPermissions="userInfo:view, userInfo:del"><!-- 权限或判断 -->
+    You can see or delete users.
 </p>
 
 </body>

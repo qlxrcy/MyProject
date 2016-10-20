@@ -9,8 +9,6 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-web:1.4.0.BUILD-SNAPSHOT" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter:1.4.0.BUILD-SNAPSHOT" />
-          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:1.4.0.BUILD-SNAPSHOT" />
-          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-autoconfigure:1.4.0.BUILD-SNAPSHOT" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-logging:1.4.0.BUILD-SNAPSHOT" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.1.7" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.1.7" />
@@ -72,6 +70,7 @@
           <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.9.2" />
           <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.2" />
           <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache-core:2.5.0" />
+          <element id="library" level="project" name="Maven: com.github.theborakompanioni:thymeleaf-extras-shiro:1.2.1" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context-support:4.3.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.3.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.2.RELEASE" />
@@ -79,6 +78,8 @@
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.21" />
           <element id="library" level="project" name="Maven: org.apache.shiro:shiro-spring:1.2.2" />
           <element id="library" level="project" name="Maven: org.apache.shiro:shiro-web:1.2.2" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:1.4.0.BUILD-SNAPSHOT" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-autoconfigure:1.4.0.BUILD-SNAPSHOT" />
         </element>
       </element>
       <element id="directory" name="META-INF">
